@@ -1,0 +1,124 @@
+/* override header styles */
+#home-header {
+    justify-content: flex-end !important;
+}
+
+#search-form {
+    text-align: center;
+    margin-top: 5%;
+    font-size: large;
+    font-family: 'Libre Franklin', serif;
+}
+
+#search-label {
+    text-align: center; 
+    color: rgb(91, 91, 159); 
+    font-family: 'Libre Franklin', serif;
+    font-size: 2em;
+    position: relative;
+    right: 15px;
+}
+
+#search-bar {
+    padding: 0px;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 0 10px grey;
+    margin-top: 20px;
+    width: 50%;
+    height: 3rem;
+    font-family: 'Libre Franklin', serif;
+    font-size: 1em;
+    text-align: center;
+    color: rgb(43, 43, 70);
+    z-index: 2;
+}
+
+#search-bar:focus {
+    outline: 2px solid rgb(91, 91, 159);
+}
+
+#search-btn {
+    border: 0;
+    border-radius: 20px;
+    height: 3.5em;
+    width: 50px;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+}
+
+#search-btn > i {
+    transform: scale(3,3);
+    color:rgb(91, 91, 159);
+}
+
+#search-btn > i:hover {
+    color:rgb(152, 152, 205);
+}
+
+/* Advanced Search Styles */
+
+#adv-search {
+    margin-top: 20px;
+    position: relative;
+    right: 15px;
+    /* visibility: hidden; */
+    position: relative;
+}
+
+#adv-toggle {
+    margin-top: 20px;
+    position: relative;
+    right: 15px;
+    background-color: white;
+    border: none;
+    color:rgb(52, 52, 100);
+    font-weight: bold;
+    font-size: medium;
+    z-index: 2;
+}
+
+#adv-toggle:hover {
+    cursor: pointer;
+    color: rgb(152, 152, 205);
+}
+
+#adv-cover {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    transition: transform 1s;
+    z-index: 1;
+}
+
+#adv-inputs {
+    margin-top: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 0;
+    /* z-index: 0; */
+}
+
+.search-param {
+
+}
+
+#adv-submit {
+    grid-row-start: 3;
+    grid-column: 1/span 2;
+    visibility: hidden;
+}
+
+.adv-label {
+    color: rgb(52, 52, 100);
+    margin-right: 5px;
+}

@@ -1,0 +1,57 @@
+<!-- TODO: make field centered in fieldset -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/about_styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1 id="web-title"> <a href="../index.html">Nicholas' Website</a> </h1>
+    <header id="home-header">
+        <div id="navbar-container">
+            <nav id="nav-bar">
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="resources.html">Resources</a>
+                <a class="nav-link" href="weather.html">Weather</a>
+                <a class="nav-link" href="#user-fname">Contact Us</a>
+            </nav>
+        </div>  
+    </header>
+
+    <h2 id="form-title">Login Form</h2>
+
+    <form action="../includes/formhandler.inc.php" method="post" id="login-form">
+        <fieldset id="login-fields">
+            <section class="field-container" style="margin-top: auto; margin-bottom: auto;">
+                <div class="input-field">
+                    <label for="user-fname">First Name</label><br>
+                    <input type="text" name="user-fname" id="user-fname"><br>
+                </div>
+                <div class="input-field">
+                    <label for="user-lname">Last Name</label><br>
+                    <input type="text" name="user-lname" id="user-lname"><br>
+                </div>
+                <div class="input-field">
+                    <label for="user-age">Age</label><br>
+                    <input type="number" name="user-age" id="user-age"><br>
+                </div>
+                <div class="input-field">
+                    <label for="user-color">Favourite Colour</label><br>
+                    <input type="text" name="user-color" id="user-color"><br>
+                </div>
+                <div id="field-buttons">
+                    <button type="submit" id="b-submit" name="b-submit">LOGIN</button>
+                    <!-- <button type="reset">Reset</button> -->
+                </div>
+            </section>
+        </fieldset>
+    </form>
+</body>
+</html>

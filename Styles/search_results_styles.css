@@ -1,0 +1,30 @@
+/* override header styles */
+#home-header {
+    justify-content: flex-end !important;
+}
+
+#results-title {
+    text-align: center;
+    color: rgb(91, 91, 159); 
+    font-family: 'Libre Franklin', serif;
+    font-size: 2.5em;
+    font-weight: 100;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#results-body {
+    display: grid;
+    place-content: baseline center;
+}
+
+.output-data {
+    text-transform: capitalize;
+}
+
+#search-link {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: orange;
+}

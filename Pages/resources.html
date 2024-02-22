@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/resources_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1 id="web-title"> <a href="../index.html">Nicholas' Website</a> </h1>
+
+    <!-- navigation header -->
+    <header id="home-header">
+        <div id="navbar-container">
+            <nav id="nav-bar">  
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="resources.html">Resources</a>
+                <a class="nav-link" href="weather.html">Weather</a>
+                <a class="nav-link" href="#">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    
+    <form action="../search.php" id="search-form" method="post">
+        <div>
+            <label for="search-bar" id="search-label">Search</label><br>
+            <input type="text" name="search-bar" id="search-bar">
+
+            <button type="submit" id="search-btn"><i class="fa fa-search" aria-hidden="false"></i></button>
+        </div>
+        <!-- Advanced Search section with several options -->
+        <button type="button" id="adv-toggle" onclick="toggleAdvSearch()">Advanced Search</button>
+        <section id="adv-search">
+            <div id="adv-cover"></div>
+            <div id="adv-inputs">
+                <div class="search-param">
+                    <label for="fname" class="adv-label">First Name</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div class="search-param">
+                    <label for="lname" class="adv-label">Last name</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+                <div class="search-param">
+                    <label for="age" class="adv-label">Age</label>
+                    <input type="text" name="age" id="age">
+                </div>
+                <div class="search-param">
+                    <label for="fav-colour" class="adv-label">Favourite Colour</label>
+                    <input type="text" name="fav-colour" id="fav-colour">
+                </div> 
+            </div>
+            <br>
+            <button type="submit" id="adv-submit">Search</button>
+        </section>
+    </form>
+    <script>
+        // TODO: find good way to have "animation" go both ways, and sometimes cover starts too high up, pressing adv search quickly messes things up
+        // reveal advanced search section by turning on visibility and lowering "cover" of section
+        // clear all fields when button toggled?
+        function toggleAdvSearch(){
+            const searchButton = document.getElementById("adv-submit");
+            let visibility = getComputedStyle(searchButton).visibility;
+            //cover to be lowered
+            const searchCover = document.getElementById("adv-cover");
+
+            if(visibility == "visible"){
+                searchCover.style.transform = "none";
+                searchButton.style.visibility = "hidden";
+            }
+            else {
+                searchCover.style.transform = "translateY(15vh)";
+                searchButton.style.visibility = "visible";
+            }
+        }
+    </script>
+</body>
+</html>

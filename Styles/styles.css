@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* Website Title Styles */
+#web-title {
+    color: rgb(91, 91, 159);
+    padding: 5px;
+    border: 3px solid rgb(91, 91, 159);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+#web-title > a, #web-title > a:visited {
+    text-decoration: none;
+    color:rgb(91, 91, 159);
+}
+
+/* Header, Navigation styles, TimeZone Styles  */
+#home-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#timezone-bar {
+    position: relative;
+    top: 20px;
+    width: 37%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(91, 91, 159);
+    border-radius: 20px;
+    color: rgb(241, 241, 251);
+    padding-inline: 20px;
+    height: 9em;
+    z-index: 2;
+    /* box-shadow: inset 10px 0 black; */
+
+}
+
+#timezone-bar::before {
+   content: "";
+   display: flex;
+   background-color: rgb(91, 91, 159);
+   height: 9em;
+   width: 4em;
+   position: absolute;
+   left: -10px;
+   z-index: 1;
+}
+
+
+#timezone-list {
+    height: 3em;
+    width: 100px;
+    text-overflow: ellipsis;
+    padding: 8px;
+    border: 0;
+    appearance: none;
+    background-color: rgb(55, 55, 105);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    right: 15px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+#timezone-list:focus {
+    outline: 1px solid rgb(241, 241, 251);
+}
+
+#timezone-list:hover {
+    cursor: pointer;
+}
+
+#timetext {
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#navbar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: rgb(91, 91, 159);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 7px;
+    padding-inline: 12px;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: lightblue;
+    border-radius: 22px;
+    transition-duration: 0.3s;
+    /* transition-property: border-radius; */
+}
+
+/* Image Slider Styles */
+#image-slider {
+    height: 800px;
+    width: 100%;
+}
+
+.homepage-img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Text Block Fade-In Styles */
+.fade-in-block {
+    opacity: 0;
+    transition: 1s all ease; 
+    transform: translateY(150px);
+}
+
+.fade-in-block.active {
+    opacity: 1;
+    transform: translateY(0);
+}

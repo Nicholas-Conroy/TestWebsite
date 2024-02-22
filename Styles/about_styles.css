@@ -1,0 +1,81 @@
+/* override header styles */
+#home-header {
+    justify-content: flex-end !important;
+}
+
+#form-title {
+    text-align: center; 
+    color: rgb(91, 91, 159); 
+    font-family: 'Libre Franklin', serif;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+#login-form {
+    display: flex;
+    justify-content: flex-end;
+    justify-self: center;
+    height: 30em;
+    font-family: 'Libre Franklin', serif;
+    /* width: 400px; */
+}
+
+#login-fields {
+    margin-inline: auto;
+    width: 400px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 10px rgb(135, 135, 135);
+    border-radius: 10px;
+}
+
+.input-field {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#login-fields input {
+    padding: 5px;
+    border: 0px;
+    border-bottom: 1px solid rgb(144, 142, 142);
+    margin-top: 10px;
+    width: 60%;
+    font-family: 'Libre Franklin', serif;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+#login-fields label {
+    color: rgb(161, 161, 161);
+    font-size: 1em;
+
+}
+
+#login-fields input:focus {
+    outline: none;
+}
+
+/* age field */
+#user-age {
+    width: 50px !important; 
+}
+
+#login-fields button {
+    padding: 10px;
+    background-color: rgb(91, 91, 159);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    width: 40%;
+    transition: all 0.5s;
+}
+
+#login-fields button:hover {
+    background-color: rgb(41, 41, 85); 
+    cursor: pointer;
+    transform: scale(1.1);
+}
+

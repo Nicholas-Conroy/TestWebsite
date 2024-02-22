@@ -1,0 +1,70 @@
+<!-- TODO: Auto update time every minute using JS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas' Website</title>
+    <link href="./Styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1 id="web-title"> <a href="index.html">Nicholas' Website</a> </h1>
+    <header id="home-header"> 
+        <!-- Time Zone List and Display -->
+        <div id="timezone-bar">
+            <select name="timezones" id="timezone-list">
+                <option value="America/Toronto">Toronto</option>
+                <option value="Europe/London">London</option>
+                <option value="Asia/Manila">Manila</option>
+                <option value="America/Vancouver">Vancouver</option>
+                <option value="America/Edmonton">Lacombe</option>
+                <option value="Australia/Sydney">Sydney</option>
+                <option value="Asia/Kolkata">New Delhi</option>
+                <option value="America/Chicago">Anoka</option>
+
+            </select>
+            <p id="timetext"></p>
+        </div>
+        <!-- Navigation Bar -->
+        <div id="navbar-container">
+            <nav id="nav-bar">
+                <a class="nav-link" href="Pages/about.html">About</a>
+                <a class="nav-link" href="Pages/resources.html">Resources</a>
+                <a class="nav-link" href="Pages/weather.html">Weather</a>
+                <a class="nav-link" href="#user-fname">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Image Slider Automatic Revolution -->
+    <div id="image-slider"> 
+        <img class="homepage-img" id="hpage-img1" src="Images/toronto-night.jpg" alt="Toronto at night">
+        <img class="homepage-img" id="hpage-img1" src="Images/southbend-night.jpg" alt="Toronto at night">
+        <img class="homepage-img" id="hpage-img1" src="Images/skating-night.jpg" alt="Toronto at night">
+    </div>
+
+    <div class="fade-in-block">
+        <h2 style="text-align: center;">Look at this text</h2>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+
+    <div class="fade-in-block">
+        <h2 style="text-align: center;">More text!</h2>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+
+
+
+    <script src="functions.js"></script>
+</body>
+</html>
