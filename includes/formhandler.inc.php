@@ -23,7 +23,8 @@
     else {
         header('Location: ../index.html'); //sends user back to html page if user accesses php page incorrectly; security measure
         // header('HTTP/1.1 404 Not Found');
-    }
+    } 
+    
 
     try {
         require_once "db.inc.php";
